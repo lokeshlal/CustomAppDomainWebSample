@@ -1,0 +1,6 @@
+{
+  "name": "Custom app domain web sample",
+  "tagline": "App Domain Usage Sample in ASP.NET",
+  "body": "# CustomAppDomainWebSample\r\n\r\nApp Domain Usage Sample in ASP.NET\r\n\r\n### Important files\r\n1. **CustomAppDomainWebSample/Plugin/PluginManager.cs**\r\n    \r\n    Starts watcher on the plugin directory. Preloads the existing dlls in the directory.\r\n2. **CustomAppDomainWebSample/Plugin/PluginsActivator.cs**\r\n    \r\n    Responsible for creating new app domain, adding assembly in app domain and creating instance of the plugin class\r\n    \r\n3. **CustomAppDomainWebSample/Global.asax.cs**\r\n\r\n    Starts monitoring on the directory\r\n    \r\n4. **CustomAppDomainWebSample/Controllers/HomeController.cs** and **CustomAppDomainWebSample/Views/Home/Index.cshtml**\r\n\r\n    Example usage of PluginsActivator class\r\n\r\n5. **Interface/IMarshalObj.cs**\r\n\r\n    Interface which all plugin classes should derive from\r\n    \r\n### Where to place the plugin dlls\r\n\r\nSuch as SampleDLL_1.dll and supporting dlls (in this example, only one supporting dll InterfaceCommon.dll), all should be placed in the DLLs folder or what ever folder specified in the PluginManager class (directoryToMonitor field).\r\n\r\nAll comments are present inline with the code.",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
